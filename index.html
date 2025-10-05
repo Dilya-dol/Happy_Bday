@@ -24,17 +24,16 @@
         .hero {
             position: relative;
             height: 100vh;
-            background: url('photo2.jpg') center no-repeat; /* 💻 для ноутбуков */
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            overflow: hidden;
+            background: url('photo2.jpg') center no-repeat;
+            background-size: cover;
+            background-position: center;
         }
 
-        /* 📱 Для телефонов — другая картинка */
         @media (max-width: 768px) {
             .hero {
                 background: url('photo3.jpg') center no-repeat;
+                background-size: cover;
+                background-position: center;
             }
         }
 
@@ -104,6 +103,21 @@
         .lead b {
             color: #000;
         }
+
+        .highlight-title {
+            display: inline-block;
+            font-family: 'Roboto Slab', serif;
+            font-weight: 700;
+            font-size: 1.6em;
+            text-transform: uppercase;
+            color: #2c2c2c;
+            letter-spacing: 1.5px;
+        }
+
+        .highlight-number {
+            font-size: 1.1em;
+        }
+
 
         /* 🎀 Блок с 3 столбцами */
         .event-info {
@@ -237,29 +251,29 @@
 
     <!-- 🎂 Подробности -->
     <section id="details">
-        <h2>🎂 Приглашение на День рождения 🎉</h2>
         <p class="lead">
-            Вы приглашены на мой юбилей — 50 лет! <br />
+            Приглашаю Вас на мой<br />
+            <span class="highlight-title">ЮБИЛЕЙ — 50 ЛЕТ!</span><br />
             Обещаю хороший вечер, вкусный ужин и море позитива.<br />
             Будет музыка, уютная атмосфера и люди, с которыми приятно провести время.<br />
             Хочу, чтобы этот день запомнился тёплыми разговорами и хорошим настроением.<br />
-            Буду очень рада вас видеть!
+            Буду очень рада Вас видеть!
         </p>
 
         <div class="event-info">
             <div class="info-item">
-                <h3>25</h3>
-                <p>октября</p>
+                <h4><b>25</b></h4>
+                <h5><b>октября</b></h5>
             </div>
             <div class="divider"></div>
             <div class="info-item">
-                <p>Суббота</p>
-                <p>15:00</p>
+                <h4><b>VIP KABINET</b></h4>
+                <h5><b>Проспект Республики, 22/1</b></h5>
             </div>
             <div class="divider"></div>
             <div class="info-item">
-                <p>VIP KABINET</p>
-                <p>Проспект Республики, 22/1</p>
+                <h4><b>15:00</b></h4>
+                <h5><b>Суббота</b></h5>
             </div>
         </div>
     </section>
